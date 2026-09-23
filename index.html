@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rutas de Trujillo — Guía interactiva de turismo</title>
+<meta name="description" content="Explora Trujillo, Valle del Cauca a través de 4 rutas temáticas: naturaleza, cultura, gastronomía y eventos.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">Rutas de Trujillo</span>
+      <span class="brand-sub" data-i18n="brand_sub">Ciudad Jardín, Valle del Cauca</span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="rutas/natural.html" data-i18n="nav_natural">Ruta Natural</a>
+      <a href="rutas/cultural.html" data-i18n="nav_cultural">Ruta Cultural</a>
+      <a href="rutas/gastronomica.html" data-i18n="nav_gastronomica">Ruta Gastronómica</a>
+      <a href="rutas/eventos.html" data-i18n="nav_eventos">Ruta de Eventos</a>
+      <a href="creditos.html" data-i18n="nav_creditos">Créditos</a>
+      <button id="lang-toggle" aria-label="Switch language">EN</button>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="hero-eyebrow" data-i18n="hero_eyebrow">Un pasaporte para explorar</p>
+      <h1 data-i18n="hero_title">Descubre Trujillo,<br>una ruta a la vez</h1>
+      <p class="lead" data-i18n="hero_lead">
+        Trujillo es un joven municipio cafetero del norte del Valle del Cauca, conocido
+        como la "Ciudad Jardín". Elige una ruta según lo que quieras vivir — naturaleza,
+        cultura, sabor o fiesta — y ve sellando tu paso por cada experiencia.
+      </p>
+    </div>
+    <div class="hero-art"><img src="assets/img/home-hero.jfif" alt="Trujillo, Valle del Cauca" loading="lazy" style="width:100%;height:100%;object-fit:cover"></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="routes-grid">
+
+    <a class="route-card natural" href="rutas/natural.html">
+      <span class="route-tag" data-i18n="natural_tag">Naturaleza</span>
+      <h3 data-i18n="natural_title">Ruta Natural</h3>
+      <p data-i18n="natural_desc">Miradores, senderos entre cafetales y los ríos que atraviesan el municipio.</p>
+      <span class="route-stamps" data-i18n="natural_stamps">7 experiencias por sellar</span>
+    </a>
+
+    <a class="route-card cultural" href="rutas/cultural.html">
+      <span class="route-tag" data-i18n="cultural_tag">Cultura e Historia</span>
+      <h3 data-i18n="cultural_title">Ruta Cultural</h3>
+      <p data-i18n="cultural_desc">El patrimonio del casco urbano y la memoria histórica de Trujillo.</p>
+      <span class="route-stamps" data-i18n="cultural_stamps">8 experiencias por sellar</span>
+    </a>
+
+    <a class="route-card gastronomica" href="rutas/gastronomica.html">
+      <span class="route-tag" data-i18n="gastronomica_tag">Gastronomía</span>
+      <h3 data-i18n="gastronomica_title">Ruta Gastronómica</h3>
+      <p data-i18n="gastronomica_desc">Café de origen y los platos que definen la mesa trujillense.</p>
+      <span class="route-stamps" data-i18n="gastronomica_stamps">7 experiencias por sellar</span>
+    </a>
+
+    <a class="route-card eventos" href="rutas/eventos.html">
+      <span class="route-tag" data-i18n="eventos_tag">Eventos comunitarios</span>
+      <h3 data-i18n="eventos_title">Ruta de Eventos</h3>
+      <p data-i18n="eventos_desc">Las fiestas y festivales que reúnen al municipio durante el año.</p>
+      <span class="route-stamps" data-i18n="eventos_stamps">5 experiencias por sellar</span>
+    </a>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span data-i18n="footer_note">Aplicación multimedia académica — Curso Aplicaciones Multimedia, UNAD.</span>
+    <a href="creditos.html" data-i18n="footer_credits">Ver créditos e imágenes</a>
+  </div>
+</footer>
+
+<script>
+window.PAGE_I18N = {
+  es: {
+    brand_sub: "Ciudad Jardín, Valle del Cauca",
+    nav_natural: "Ruta Natural",
+    nav_cultural: "Ruta Cultural",
+    nav_gastronomica: "Ruta Gastronómica",
+    nav_eventos: "Ruta de Eventos",
+    nav_creditos: "Créditos",
+    hero_eyebrow: "Un pasaporte para explorar",
+    hero_title: "Descubre Trujillo,<br>una ruta a la vez",
+    hero_lead: "Trujillo es un joven municipio cafetero del norte del Valle del Cauca, conocido como la \"Ciudad Jardín\". Elige una ruta según lo que quieras vivir — naturaleza, cultura, sabor o fiesta — y ve sellando tu paso por cada experiencia.",
+    natural_tag: "Naturaleza", natural_title: "Ruta Natural",
+    natural_desc: "Miradores, senderos entre cafetales y los ríos que atraviesan el municipio.",
+    natural_stamps: "7 experiencias por sellar",
+    cultural_tag: "Cultura e Historia", cultural_title: "Ruta Cultural",
+    cultural_desc: "El patrimonio del casco urbano y la memoria histórica de Trujillo.",
+    cultural_stamps: "8 experiencias por sellar",
+    gastronomica_tag: "Gastronomía", gastronomica_title: "Ruta Gastronómica",
+    gastronomica_desc: "Café de origen y los platos que definen la mesa trujillense.",
+    gastronomica_stamps: "7 experiencias por sellar",
+    eventos_tag: "Eventos comunitarios", eventos_title: "Ruta de Eventos",
+    eventos_desc: "Las fiestas y festivales que reúnen al municipio durante el año.",
+    eventos_stamps: "5 experiencias por sellar",
+    footer_note: "Aplicación multimedia académica — Curso Aplicaciones Multimedia, UNAD.",
+    footer_credits: "Ver créditos e imágenes"
+  },
+  en: {
+    brand_sub: "Garden City, Valle del Cauca",
+    nav_natural: "Nature Route",
+    nav_cultural: "Culture Route",
+    nav_gastronomica: "Food Route",
+    nav_eventos: "Events Route",
+    nav_creditos: "Credits",
+    hero_eyebrow: "A passport to explore",
+    hero_title: "Discover Trujillo,<br>one route at a time",
+    hero_lead: "Trujillo is a young coffee-growing town in northern Valle del Cauca, known as the \"Garden City.\" Pick a route based on what you want to experience — nature, culture, flavor, or festivity — and stamp your way through each stop.",
+    natural_tag: "Nature", natural_title: "Nature Route",
+    natural_desc: "Viewpoints, trails through coffee farms, and the rivers that cross the town.",
+    natural_stamps: "7 experiences to stamp",
+    cultural_tag: "Culture & History", cultural_title: "Culture Route",
+    cultural_desc: "The heritage of downtown and Trujillo's historical memory.",
+    cultural_stamps: "8 experiences to stamp",
+    gastronomica_tag: "Food", gastronomica_title: "Food Route",
+    gastronomica_desc: "Origin coffee and the dishes that define the Trujillo table.",
+    gastronomica_stamps: "7 experiences to stamp",
+    eventos_tag: "Community Events", eventos_title: "Events Route",
+    eventos_desc: "The festivals that bring the town together throughout the year.",
+    eventos_stamps: "5 experiences to stamp",
+    footer_note: "Academic multimedia app — Multimedia Applications course, UNAD.",
+    footer_credits: "See credits & images"
+  }
+};
+</script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

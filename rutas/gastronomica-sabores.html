@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sabores locales — Rutas de Trujillo</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">Rutas de Trujillo</span>
+      <span class="brand-sub" data-i18n="brand_sub">Ciudad Jardín, Valle del Cauca</span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="natural.html" data-i18n="nav_natural">Ruta Natural</a>
+      <a href="cultural.html" data-i18n="nav_cultural">Ruta Cultural</a>
+      <a href="gastronomica.html" class="current" data-i18n="nav_gastronomica">Ruta Gastronómica</a>
+      <a href="eventos.html" data-i18n="nav_eventos">Ruta de Eventos</a>
+      <a href="../creditos.html" data-i18n="nav_creditos">Créditos</a>
+      <button id="lang-toggle" aria-label="Switch language">EN</button>
+    </nav>
+  </div>
+</header>
+
+<div class="passport-bar">
+  <div class="wrap">
+    <span data-i18n="passport_label">Progreso de sellos</span>
+    <div class="passport-track"><div class="passport-fill"></div></div>
+    <span data-stamp-count data-total-experiences="7" data-route-prefix="gastronomica">0/7</span>
+  </div>
+</div>
+
+<nav class="crumbs wrap" aria-label="Ruta de navegación">
+  <a href="../index.html" data-i18n="crumb_home">Inicio</a> /
+  <a href="gastronomica.html" data-i18n="nav_gastronomica">Ruta Gastronómica</a> /
+  <span data-i18n="crumb_here">Sabores locales</span>
+</nav>
+
+<section class="route-hero">
+  <div class="wrap">
+    <h1 data-i18n="page_title">Sabores locales</h1>
+    <p data-i18n="page_intro">Tres platos que resumen la cocina campesina de Trujillo, entre leña, campo y tradición paisa.</p>
+  </div>
+</section>
+
+<section class="experiences wrap">
+  <article class="experience-card">
+    <div class="thumb"><img src="../assets/img/sancocho-lena.jfif" alt="Sancocho de gallina en leña" loading="lazy"></div>
+    <div>
+      <h3 data-i18n="exp0_title">Sancocho de gallina en leña</h3>
+      <p data-i18n="exp0_desc">Preparado con gallina criolla, plátano verde, yuca, mazorca y bastante cilantro, cocinado a fuego lento con leña para darle un sabor ahumado único.</p>
+      <button class="stamp-btn" data-experience-id="gastro-sancocho-lena">
+        <span class="stamp-dot"></span><span class="stamp-label" data-i18n="stamp_label">Sellar esta parada</span>
+      </button>
+    </div>
+  </article>
+  <article class="experience-card">
+    <div class="thumb"><img src="../assets/img/carne-asada-guasca.jfif" alt="Carne asada en guasca de plátano" loading="lazy"></div>
+    <div>
+      <h3 data-i18n="exp1_title">Carne asada en guasca de plátano</h3>
+      <p data-i18n="exp1_desc">Un plato tradicional de la zona montañosa que resalta los sabores del campo.</p>
+      <button class="stamp-btn" data-experience-id="gastro-carne-guasca">
+        <span class="stamp-dot"></span><span class="stamp-label" data-i18n="stamp_label">Sellar esta parada</span>
+      </button>
+    </div>
+  </article>
+  <article class="experience-card">
+    <div class="thumb"><img src="../assets/img/calentado-trujillense.jfif" alt="Calentado trujillense" loading="lazy"></div>
+    <div>
+      <h3 data-i18n="exp2_title">Calentado trujillense</h3>
+      <p data-i18n="exp2_desc">Un homenaje a las fincas de la región; lleva frijoles y arroz del día anterior mezclados con aguacate, plátano maduro, chicharrón, chorizo, huevo y arepa, acompañado de un buen café local.</p>
+      <button class="stamp-btn" data-experience-id="gastro-calentado-trujillense">
+        <span class="stamp-dot"></span><span class="stamp-label" data-i18n="stamp_label">Sellar esta parada</span>
+      </button>
+    </div>
+  </article>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span data-i18n="footer_note">Aplicación multimedia académica — Curso Aplicaciones Multimedia, UNAD.</span>
+    <a href="../creditos.html" data-i18n="footer_credits">Ver créditos e imágenes</a>
+  </div>
+</footer>
+
+<script>
+window.PAGE_I18N = {
+  es: {
+    brand_sub: "Ciudad Jardín, Valle del Cauca",
+    nav_natural: "Ruta Natural",
+    nav_cultural: "Ruta Cultural",
+    nav_gastronomica: "Ruta Gastronómica",
+    nav_eventos: "Ruta de Eventos",
+    nav_creditos: "Créditos",
+    passport_label: "Progreso de sellos",
+    crumb_home: "Inicio",
+    footer_note: "Aplicación multimedia académica — Curso Aplicaciones Multimedia, UNAD.",
+    footer_credits: "Ver créditos e imágenes",
+    stamp_label: "Sellar esta parada",
+    map_title: "Mapa de la ruta",
+    map_hint: "Ubicación aproximada de cada punto. Toca un marcador para ver de qué se trata.",
+    crumb_here: "Sabores locales",
+    page_title: "Sabores locales",
+    page_intro: "Tres platos que resumen la cocina campesina de Trujillo, entre leña, campo y tradición paisa.",
+    img_alt_0: "Foto: olla de sancocho al fuego de leña",
+    exp0_title: "Sancocho de gallina en leña",
+    exp0_desc: "Preparado con gallina criolla, plátano verde, yuca, mazorca y bastante cilantro, cocinado a fuego lento con leña para darle un sabor ahumado único.",
+    img_alt_1: "Foto: carne asada envuelta en hoja de plátano",
+    exp1_title: "Carne asada en guasca de plátano",
+    exp1_desc: "Un plato tradicional de la zona montañosa que resalta los sabores del campo.",
+    img_alt_2: "Foto: plato de calentado trujillense",
+    exp2_title: "Calentado trujillense",
+    exp2_desc: "Un homenaje a las fincas de la región; lleva frijoles y arroz del día anterior mezclados con aguacate, plátano maduro, chicharrón, chorizo, huevo y arepa, acompañado de un buen café local."
+  },
+  en: {
+    brand_sub: "Garden City, Valle del Cauca",
+    nav_natural: "Nature Route",
+    nav_cultural: "Culture Route",
+    nav_gastronomica: "Food Route",
+    nav_eventos: "Events Route",
+    nav_creditos: "Credits",
+    passport_label: "Stamp progress",
+    crumb_home: "Home",
+    footer_note: "Academic multimedia app — Multimedia Applications course, UNAD.",
+    footer_credits: "See credits & images",
+    stamp_label: "Stamp this stop",
+    map_title: "Route map",
+    map_hint: "Approximate location of each stop. Tap a marker to see what it is.",
+    crumb_here: "Local flavors",
+    page_title: "Local flavors",
+    page_intro: "Three dishes that sum up Trujillo's country cooking, between wood fire, farmland, and paisa tradition.",
+    img_alt_0: "Photo: sancocho pot over a wood fire",
+    exp0_title: "Wood-fired chicken sancocho",
+    exp0_desc: "Made with free-range hen, green plantain, cassava, corn, and plenty of cilantro, slow-cooked over wood fire for a unique smoky flavor.",
+    img_alt_1: "Photo: beef wrapped in plantain leaf",
+    exp1_title: "Beef grilled in plantain leaf",
+    exp1_desc: "A traditional dish from the mountain area that highlights the flavors of the countryside.",
+    img_alt_2: "Photo: a plate of calentado trujillense",
+    exp2_title: "Calentado trujillense",
+    exp2_desc: "A tribute to the region's farms; leftover beans and rice mixed with avocado, ripe plantain, pork crackling, chorizo, egg, and arepa, served with good local coffee."
+  }
+};
+</script>
+<script src="../assets/js/i18n.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

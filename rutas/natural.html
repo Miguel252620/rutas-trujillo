@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ruta Natural — Rutas de Trujillo</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">Rutas de Trujillo</span>
+      <span class="brand-sub" data-i18n="brand_sub">Ciudad Jardín, Valle del Cauca</span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="natural.html" class="current" data-i18n="nav_natural">Ruta Natural</a>
+      <a href="cultural.html" data-i18n="nav_cultural">Ruta Cultural</a>
+      <a href="gastronomica.html" data-i18n="nav_gastronomica">Ruta Gastronómica</a>
+      <a href="eventos.html" data-i18n="nav_eventos">Ruta de Eventos</a>
+      <a href="../creditos.html" data-i18n="nav_creditos">Créditos</a>
+      <button id="lang-toggle" aria-label="Switch language">EN</button>
+    </nav>
+  </div>
+</header>
+
+<div class="passport-bar">
+  <div class="wrap">
+    <span data-i18n="passport_label">Progreso de sellos</span>
+    <div class="passport-track"><div class="passport-fill"></div></div>
+    <span data-stamp-count data-total-experiences="7" data-route-prefix="natural">0/7</span>
+  </div>
+</div>
+
+<nav class="crumbs wrap" aria-label="Ruta de navegación">
+  <a href="../index.html" data-i18n="crumb_home">Inicio</a> / <span data-i18n="nav_natural">Ruta Natural</span>
+</nav>
+
+<section class="route-hero">
+  <div class="wrap" style="--route-color:var(--leaf-600)">
+    <span class="route-tag" data-i18n="natural_tag">Naturaleza</span>
+    <h1 data-i18n="natural_h1">Ruta Natural</h1>
+    <p data-i18n="natural_intro">
+      Trujillo está atravesado por cerros, ríos y senderos entre cultivos de café,
+      mora y aguacate. Esta ruta reúne los miradores para ver el Valle desde arriba
+      y los caminos y ríos que se pueden recorrer a pie.
+    </p>
+  </div>
+</section>
+
+<section class="map-section wrap">
+  <h2 data-i18n="map_title">Mapa de la ruta</h2>
+  <p class="map-hint" data-i18n="map_hint">Ubicación aproximada de cada punto. Toca un marcador para ver de qué se trata.</p>
+  <div id="route-map"></div>
+</section>
+
+<section class="subsections wrap">
+  <a class="sub-card" href="natural-miradores.html">
+    <h3 data-i18n="sub_miradores_title">Miradores</h3>
+    <p data-i18n="sub_miradores_desc">Puertas del Sol, La Fontana y Makumba — vistas panorámicas del Valle del Cauca.</p>
+  </a>
+  <a class="sub-card" href="natural-senderos.html">
+    <h3 data-i18n="sub_senderos_title">Senderos y ríos</h3>
+    <p data-i18n="sub_senderos_desc">Cerro Azul, Cuchilla de Trujillo y los ríos Culebras, Cuancua, Blanco y Cáceres.</p>
+  </a>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span data-i18n="footer_note">Aplicación multimedia académica — Curso Aplicaciones Multimedia, UNAD.</span>
+    <a href="../creditos.html" data-i18n="footer_credits">Ver créditos e imágenes</a>
+  </div>
+</footer>
+
+<script>
+window.PAGE_I18N = {
+  es: {
+    brand_sub: "Ciudad Jardín, Valle del Cauca",
+    nav_natural: "Ruta Natural", nav_cultural: "Ruta Cultural",
+    nav_gastronomica: "Ruta Gastronómica", nav_eventos: "Ruta de Eventos", nav_creditos: "Créditos",
+    passport_label: "Progreso de sellos", crumb_home: "Inicio",
+    natural_tag: "Naturaleza", natural_h1: "Ruta Natural",
+    natural_intro: "Trujillo está atravesado por cerros, ríos y senderos entre cultivos de café, mora y aguacate. Esta ruta reúne los miradores para ver el Valle desde arriba y los caminos y ríos que se pueden recorrer a pie.",
+    map_title: "Mapa de la ruta", map_hint: "Ubicación aproximada de cada punto. Toca un marcador para ver de qué se trata.",
+    sub_miradores_title: "Miradores", sub_miradores_desc: "Puertas del Sol, La Fontana y Makumba — vistas panorámicas del Valle del Cauca.",
+    sub_senderos_title: "Senderos y ríos", sub_senderos_desc: "Cerro Azul, Cuchilla de Trujillo y los ríos Culebras, Cuancua, Blanco y Cáceres.",
+    footer_note: "Aplicación multimedia académica — Curso Aplicaciones Multimedia, UNAD.",
+    footer_credits: "Ver créditos e imágenes"
+  },
+  en: {
+    brand_sub: "Garden City, Valle del Cauca",
+    nav_natural: "Nature Route", nav_cultural: "Culture Route",
+    nav_gastronomica: "Food Route", nav_eventos: "Events Route", nav_creditos: "Credits",
+    passport_label: "Stamp progress", crumb_home: "Home",
+    natural_tag: "Nature", natural_h1: "Nature Route",
+    natural_intro: "Trujillo is crossed by hills, rivers, and trails through coffee, blackberry, and avocado crops. This route gathers the viewpoints for seeing the Valley from above and the paths and rivers you can walk.",
+    map_title: "Route map", map_hint: "Approximate location of each stop. Tap a marker to see what it is.",
+    sub_miradores_title: "Viewpoints", sub_miradores_desc: "Puertas del Sol, La Fontana and Makumba — panoramic views of the Valle del Cauca.",
+    sub_senderos_title: "Trails & rivers", sub_senderos_desc: "Cerro Azul, Cuchilla de Trujillo, and the Culebras, Cuancua, Blanco and Cáceres rivers.",
+    footer_note: "Academic multimedia app — Multimedia Applications course, UNAD.",
+    footer_credits: "See credits & images"
+  }
+};
+</script>
+<script src="../assets/js/i18n.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  const map = L.map('route-map', { scrollWheelZoom:false }).setView([4.2114, -76.3222], 13);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+    subdomains: 'abcd',
+    maxZoom: 19
+  }).addTo(map);
+
+  const points = [
+    { name:'Mirador Puertas del Sol', lat:4.287639769283029, lng:-76.26695116399499, desc:'Vista panorámica, cabañas y gastronomía local.' },
+    { name:'La Fontana', lat:4.224509265998143, lng:-76.31701183883897, desc:'Tirolesa, columpio 360°, minigranja y glamping.' },
+    { name:'Makumba', lat:4.209155493629756, lng:-76.33454156309917, desc:'Piscina infinita, senderos ecológicos y gastrobar mirador.' },
+    { name:'Cerro Azul / Monteloro', lat:4.30337576799046, lng:-76.28631503993942, desc:'Caminatas entre cultivos de mora y aguacate.' },
+    { name:'Cuchilla de Trujillo', lat:4.211588091867956, lng:-76.31579564590814, desc:'Barrio-mirador dentro del casco urbano.' },
+    { name:'Río Culebras', lat:4.217460786019879, lng:-76.32142614240956, desc:'Uno de los ríos que atraviesa el municipio.' },
+    { name:'Río Cuancua', lat:4.18635959365254, lng:-76.30290895080974, desc:'Recurso hídrico que alimenta los cultivos locales.' }
+  ];
+
+  points.forEach(p => {
+    L.marker([p.lat, p.lng]).addTo(map)
+      .bindPopup('<strong>' + p.name + '</strong><br>' + p.desc);
+  });
+</script>
+</body>
+</html>

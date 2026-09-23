@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memoria de Trujillo — Rutas de Trujillo</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">Rutas de Trujillo</span>
+      <span class="brand-sub" data-i18n="brand_sub">Ciudad Jardín, Valle del Cauca</span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="natural.html" data-i18n="nav_natural">Ruta Natural</a>
+      <a href="cultural.html" class="current" data-i18n="nav_cultural">Ruta Cultural</a>
+      <a href="gastronomica.html" data-i18n="nav_gastronomica">Ruta Gastronómica</a>
+      <a href="eventos.html" data-i18n="nav_eventos">Ruta de Eventos</a>
+      <a href="../creditos.html" data-i18n="nav_creditos">Créditos</a>
+      <button id="lang-toggle" aria-label="Switch language">EN</button>
+    </nav>
+  </div>
+</header>
+
+<div class="passport-bar">
+  <div class="wrap">
+    <span data-i18n="passport_label">Progreso de sellos</span>
+    <div class="passport-track"><div class="passport-fill"></div></div>
+    <span data-stamp-count data-total-experiences="8" data-route-prefix="cultural">0/8</span>
+  </div>
+</div>
+
+<nav class="crumbs wrap" aria-label="Ruta de navegación">
+  <a href="../index.html" data-i18n="crumb_home">Inicio</a> /
+  <a href="cultural.html" data-i18n="nav_cultural">Ruta Cultural</a> /
+  <span data-i18n="crumb_here">Memoria de Trujillo</span>
+</nav>
+
+<section class="route-hero">
+  <div class="wrap">
+    <h1 data-i18n="page_title">Memoria de Trujillo</h1>
+    <p data-i18n="page_intro">La historia de un municipio joven, su economía cafetera y el proceso de memoria y resiliencia frente al conflicto armado.</p>
+  </div>
+</section>
+
+<section class="experiences wrap">
+  <article class="experience-card">
+    <div class="thumb"><img src="../assets/img/fundacion-1922.jfif" alt="Archivo histórico, fundación de Trujillo en 1922" loading="lazy"></div>
+    <div>
+      <h3 data-i18n="exp0_title">Fundación (1922)</h3>
+      <p data-i18n="exp0_desc">Trujillo fue establecido en terrenos de la hacienda "La Esneda", cedidos por la familia Vélez Toro a los colonos Leocadio y Rafael Salazar. En 1924 se llamó Vernaza, y en 1930 adoptó el nombre de Trujillo en honor al presidente Julián Trujillo. Antes de la colonización, los indios gorrones habitaron estas tierras y dejaron numerosos vestigios arqueológicos.</p>
+      <button class="stamp-btn" data-experience-id="cultural-fundacion">
+        <span class="stamp-dot"></span><span class="stamp-label" data-i18n="stamp_label">Sellar esta parada</span>
+      </button>
+    </div>
+  </article>
+  <article class="experience-card">
+    <div class="thumb"><img src="../assets/img/cafetales-ladera.jfif" alt="Cafetales en ladera, Trujillo" loading="lazy"></div>
+    <div>
+      <h3 data-i18n="exp1_title">Economía cafetera</h3>
+      <p data-i18n="exp1_desc">El auge de Trujillo se consolidó con la colonización y la siembra de café a finales del siglo XIX y principios del XX. Hoy sobresale por el cultivo de café, plátano, frutas, verduras y caña para panela.</p>
+      <button class="stamp-btn" data-experience-id="cultural-economia-cafetera">
+        <span class="stamp-dot"></span><span class="stamp-label" data-i18n="stamp_label">Sellar esta parada</span>
+      </button>
+    </div>
+  </article>
+  <article class="experience-card">
+    <div class="thumb"><img src="../assets/img/masacre-memoria.jpg" alt="Memorial de la Masacre de Trujillo" loading="lazy"></div>
+    <div>
+      <h3 data-i18n="exp2_title">La Masacre de Trujillo y la memoria histórica</h3>
+      <p data-i18n="exp2_desc">Entre 1988 y 1994 el municipio sufrió una grave crisis de violencia, con 342 víctimas de homicidio, tortura y desaparición forzada perpetradas por grupos paramilitares en alianza con narcotraficantes y agentes estatales. El sacerdote Tiberio Fernández denunció los crímenes y defendió a la comunidad antes de ser asesinado, convirtiéndose en un símbolo local de resistencia.</p>
+      <button class="stamp-btn" data-experience-id="cultural-masacre-memoria">
+        <span class="stamp-dot"></span><span class="stamp-label" data-i18n="stamp_label">Sellar esta parada</span>
+      </button>
+    </div>
+  </article>
+  <article class="experience-card">
+    <div class="thumb"><img src="../assets/img/parque-monumento-victimas.jpg" alt="Elementos conmemorativos del Parque Monumento" loading="lazy"></div>
+    <div>
+      <h3 data-i18n="exp3_title">El Parque Monumento</h3>
+      <p data-i18n="exp3_desc">Se construyó como un parque conmemorativo, creado junto a los familiares de las víctimas, para honrar su memoria y exigir justicia. Está documentado por el Centro Nacional de Memoria Histórica.</p>
+      <button class="stamp-btn" data-experience-id="cultural-parque-monumento-historia">
+        <span class="stamp-dot"></span><span class="stamp-label" data-i18n="stamp_label">Sellar esta parada</span>
+      </button>
+    </div>
+  </article>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span data-i18n="footer_note">Aplicación multimedia académica — Curso Aplicaciones Multimedia, UNAD.</span>
+    <a href="../creditos.html" data-i18n="footer_credits">Ver créditos e imágenes</a>
+  </div>
+</footer>
+
+<script>
+window.PAGE_I18N = {
+  es: {
+    brand_sub: "Ciudad Jardín, Valle del Cauca",
+    nav_natural: "Ruta Natural",
+    nav_cultural: "Ruta Cultural",
+    nav_gastronomica: "Ruta Gastronómica",
+    nav_eventos: "Ruta de Eventos",
+    nav_creditos: "Créditos",
+    passport_label: "Progreso de sellos",
+    crumb_home: "Inicio",
+    footer_note: "Aplicación multimedia académica — Curso Aplicaciones Multimedia, UNAD.",
+    footer_credits: "Ver créditos e imágenes",
+    stamp_label: "Sellar esta parada",
+    map_title: "Mapa de la ruta",
+    map_hint: "Ubicación aproximada de cada punto. Toca un marcador para ver de qué se trata.",
+    crumb_here: "Memoria de Trujillo",
+    page_title: "Memoria de Trujillo",
+    page_intro: "La historia de un municipio joven, su economía cafetera y el proceso de memoria y resiliencia frente al conflicto armado.",
+    img_alt_0: "Foto: archivo histórico del municipio",
+    exp0_title: "Fundación (1922)",
+    exp0_desc: "Trujillo fue establecido en terrenos de la hacienda \"La Esneda\", cedidos por la familia Vélez Toro a los colonos Leocadio y Rafael Salazar. En 1924 se llamó Vernaza, y en 1930 adoptó el nombre de Trujillo en honor al presidente Julián Trujillo. Antes de la colonización, los indios gorrones habitaron estas tierras y dejaron numerosos vestigios arqueológicos.",
+    img_alt_1: "Foto: cafetales en ladera",
+    exp1_title: "Economía cafetera",
+    exp1_desc: "El auge de Trujillo se consolidó con la colonización y la siembra de café a finales del siglo XIX y principios del XX. Hoy sobresale por el cultivo de café, plátano, frutas, verduras y caña para panela.",
+    img_alt_2: "Foto: Parque Monumento a las Víctimas",
+    exp2_title: "La Masacre de Trujillo y la memoria histórica",
+    exp2_desc: "Entre 1988 y 1994 el municipio sufrió una grave crisis de violencia, con 342 víctimas de homicidio, tortura y desaparición forzada perpetradas por grupos paramilitares en alianza con narcotraficantes y agentes estatales. El sacerdote Tiberio Fernández denunció los crímenes y defendió a la comunidad antes de ser asesinado, convirtiéndose en un símbolo local de resistencia.",
+    img_alt_3: "Foto: elementos conmemorativos del parque",
+    exp3_title: "El Parque Monumento",
+    exp3_desc: "Se construyó como un parque conmemorativo, creado junto a los familiares de las víctimas, para honrar su memoria y exigir justicia. Está documentado por el Centro Nacional de Memoria Histórica."
+  },
+  en: {
+    brand_sub: "Garden City, Valle del Cauca",
+    nav_natural: "Nature Route",
+    nav_cultural: "Culture Route",
+    nav_gastronomica: "Food Route",
+    nav_eventos: "Events Route",
+    nav_creditos: "Credits",
+    passport_label: "Stamp progress",
+    crumb_home: "Home",
+    footer_note: "Academic multimedia app — Multimedia Applications course, UNAD.",
+    footer_credits: "See credits & images",
+    stamp_label: "Stamp this stop",
+    map_title: "Route map",
+    map_hint: "Approximate location of each stop. Tap a marker to see what it is.",
+    crumb_here: "Trujillo's memory",
+    page_title: "Trujillo's memory",
+    page_intro: "The story of a young town, its coffee economy, and its process of memory and resilience in the face of armed conflict.",
+    img_alt_0: "Photo: the town's historical archive",
+    exp0_title: "Founding (1922)",
+    exp0_desc: "Trujillo was founded on the \"La Esneda\" estate, land given by the Vélez Toro family to settlers Leocadio and Rafael Salazar. It was named Vernaza in 1924, and took the name Trujillo in 1930 in honor of president Julián Trujillo. Before colonization, the Gorrones indigenous people lived on this land and left numerous archaeological traces.",
+    img_alt_1: "Photo: hillside coffee farms",
+    exp1_title: "Coffee economy",
+    exp1_desc: "Trujillo's growth was built on colonization and coffee planting in the late 19th and early 20th centuries. Today it stands out for growing coffee, plantain, fruit, vegetables, and sugar cane for panela.",
+    img_alt_2: "Photo: the Victims' Memorial Park",
+    exp2_title: "The Trujillo Massacre and historical memory",
+    exp2_desc: "Between 1988 and 1994 the town suffered a severe wave of violence, with 342 victims of homicide, torture, and forced disappearance carried out by paramilitary groups allied with drug traffickers and state agents. Father Tiberio Fernández denounced the crimes and defended the community before being killed, becoming a local symbol of resistance.",
+    img_alt_3: "Photo: memorial elements in the park",
+    exp3_title: "The Memorial Park",
+    exp3_desc: "Built as a memorial park together with victims' families, to honor their memory and call for justice. It is documented by Colombia's National Center for Historical Memory."
+  }
+};
+</script>
+<script src="../assets/js/i18n.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

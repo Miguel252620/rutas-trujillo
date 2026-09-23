@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Café y productos del campo — Rutas de Trujillo</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">Rutas de Trujillo</span>
+      <span class="brand-sub" data-i18n="brand_sub">Ciudad Jardín, Valle del Cauca</span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="natural.html" data-i18n="nav_natural">Ruta Natural</a>
+      <a href="cultural.html" data-i18n="nav_cultural">Ruta Cultural</a>
+      <a href="gastronomica.html" class="current" data-i18n="nav_gastronomica">Ruta Gastronómica</a>
+      <a href="eventos.html" data-i18n="nav_eventos">Ruta de Eventos</a>
+      <a href="../creditos.html" data-i18n="nav_creditos">Créditos</a>
+      <button id="lang-toggle" aria-label="Switch language">EN</button>
+    </nav>
+  </div>
+</header>
+
+<div class="passport-bar">
+  <div class="wrap">
+    <span data-i18n="passport_label">Progreso de sellos</span>
+    <div class="passport-track"><div class="passport-fill"></div></div>
+    <span data-stamp-count data-total-experiences="7" data-route-prefix="gastronomica">0/7</span>
+  </div>
+</div>
+
+<nav class="crumbs wrap" aria-label="Ruta de navegación">
+  <a href="../index.html" data-i18n="crumb_home">Inicio</a> /
+  <a href="gastronomica.html" data-i18n="nav_gastronomica">Ruta Gastronómica</a> /
+  <span data-i18n="crumb_here">Café y productos del campo</span>
+</nav>
+
+<section class="route-hero">
+  <div class="wrap">
+    <h1 data-i18n="page_title">Café y productos del campo</h1>
+    <p data-i18n="page_intro">Trujillo produce cafés de alta montaña y de especialidad, junto a una activa oferta agrícola propia del eje cafetero.</p>
+  </div>
+</section>
+
+<section class="experiences wrap">
+  <article class="experience-card">
+    <div class="thumb"><img src="../assets/img/finca-la-julia.jfif" alt="Finca La Julia, Trujillo" loading="lazy"></div>
+    <div>
+      <h3 data-i18n="exp0_title">Finca La Julia</h3>
+      <p data-i18n="exp0_desc">Una finca cafetera en las montañas locales (entre 1420 y 1700 metros de altura) que cultiva granos varietales con procesos sostenibles y de alta calidad.</p>
+      <button class="stamp-btn" data-experience-id="gastro-finca-la-julia">
+        <span class="stamp-dot"></span><span class="stamp-label" data-i18n="stamp_label">Sellar esta parada</span>
+      </button>
+    </div>
+  </article>
+  <article class="experience-card">
+    <div class="thumb"><img src="../assets/img/cafe-orozco.jpg" alt="Café Orozco" loading="lazy"></div>
+    <div>
+      <h3 data-i18n="exp1_title">Café Orozco</h3>
+      <p data-i18n="exp1_desc">Empresa familiar dedicada a la producción y exportación de café arábigo 100% colombiano con arraigo en la región.</p>
+      <button class="stamp-btn" data-experience-id="gastro-cafe-orozco">
+        <span class="stamp-dot"></span><span class="stamp-label" data-i18n="stamp_label">Sellar esta parada</span>
+      </button>
+    </div>
+  </article>
+  <article class="experience-card">
+    <div class="thumb"><img src="../assets/img/cafe-cafra.jfif" alt="Café CAFRA" loading="lazy"></div>
+    <div>
+      <h3 data-i18n="exp2_title">Café CAFRA</h3>
+      <p data-i18n="exp2_desc">Marca local de café de especialidad cultivado en la parte alta de las montañas de Trujillo.</p>
+      <button class="stamp-btn" data-experience-id="gastro-cafe-cafra">
+        <span class="stamp-dot"></span><span class="stamp-label" data-i18n="stamp_label">Sellar esta parada</span>
+      </button>
+    </div>
+  </article>
+  <article class="experience-card">
+    <div class="thumb"><img src="../assets/img/cafe-trujillo-local.jfif" alt="Café Trujillo, interior" loading="lazy"></div>
+    <div>
+      <h3 data-i18n="exp3_title">Café Trujillo y Nibermu Coffee Lounge</h3>
+      <p data-i18n="exp3_desc">En el casco urbano, ideales para disfrutar bebidas de origen y postres típicos.</p>
+      <button class="stamp-btn" data-experience-id="gastro-cafes-casco-urbano">
+        <span class="stamp-dot"></span><span class="stamp-label" data-i18n="stamp_label">Sellar esta parada</span>
+      </button>
+    </div>
+  </article>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span data-i18n="footer_note">Aplicación multimedia académica — Curso Aplicaciones Multimedia, UNAD.</span>
+    <a href="../creditos.html" data-i18n="footer_credits">Ver créditos e imágenes</a>
+  </div>
+</footer>
+
+<script>
+window.PAGE_I18N = {
+  es: {
+    brand_sub: "Ciudad Jardín, Valle del Cauca",
+    nav_natural: "Ruta Natural",
+    nav_cultural: "Ruta Cultural",
+    nav_gastronomica: "Ruta Gastronómica",
+    nav_eventos: "Ruta de Eventos",
+    nav_creditos: "Créditos",
+    passport_label: "Progreso de sellos",
+    crumb_home: "Inicio",
+    footer_note: "Aplicación multimedia académica — Curso Aplicaciones Multimedia, UNAD.",
+    footer_credits: "Ver créditos e imágenes",
+    stamp_label: "Sellar esta parada",
+    map_title: "Mapa de la ruta",
+    map_hint: "Ubicación aproximada de cada punto. Toca un marcador para ver de qué se trata.",
+    crumb_here: "Café y productos del campo",
+    page_title: "Café y productos del campo",
+    page_intro: "Trujillo produce cafés de alta montaña y de especialidad, junto a una activa oferta agrícola propia del eje cafetero.",
+    img_alt_0: "Foto: cafetal de Finca La Julia",
+    exp0_title: "Finca La Julia",
+    exp0_desc: "Una finca cafetera en las montañas locales (entre 1420 y 1700 metros de altura) que cultiva granos varietales con procesos sostenibles y de alta calidad.",
+    img_alt_1: "Foto: empaques de Café Orozco",
+    exp1_title: "Café Orozco",
+    exp1_desc: "Empresa familiar dedicada a la producción y exportación de café arábigo 100% colombiano con arraigo en la región.",
+    img_alt_2: "Foto: granos de Café CAFRA",
+    exp2_title: "Café CAFRA",
+    exp2_desc: "Marca local de café de especialidad cultivado en la parte alta de las montañas de Trujillo.",
+    img_alt_3: "Foto: interior de un café del centro",
+    exp3_title: "Café Trujillo y Nibermu Coffee Lounge",
+    exp3_desc: "En el casco urbano, ideales para disfrutar bebidas de origen y postres típicos."
+  },
+  en: {
+    brand_sub: "Garden City, Valle del Cauca",
+    nav_natural: "Nature Route",
+    nav_cultural: "Culture Route",
+    nav_gastronomica: "Food Route",
+    nav_eventos: "Events Route",
+    nav_creditos: "Credits",
+    passport_label: "Stamp progress",
+    crumb_home: "Home",
+    footer_note: "Academic multimedia app — Multimedia Applications course, UNAD.",
+    footer_credits: "See credits & images",
+    stamp_label: "Stamp this stop",
+    map_title: "Route map",
+    map_hint: "Approximate location of each stop. Tap a marker to see what it is.",
+    crumb_here: "Coffee & farm products",
+    page_title: "Coffee & farm products",
+    page_intro: "Trujillo produces high-altitude, specialty coffee, alongside a thriving agricultural offering typical of the coffee axis.",
+    img_alt_0: "Photo: Finca La Julia's coffee farm",
+    exp0_title: "Finca La Julia",
+    exp0_desc: "A coffee farm in the local mountains (between 1,420 and 1,700 meters) growing varietal beans with sustainable, high-quality processes.",
+    img_alt_1: "Photo: Café Orozco packaging",
+    exp1_title: "Café Orozco",
+    exp1_desc: "A family business producing and exporting 100% Colombian arabica coffee, rooted in the region.",
+    img_alt_2: "Photo: Café CAFRA beans",
+    exp2_title: "Café CAFRA",
+    exp2_desc: "A local specialty coffee brand grown high in the mountains around Trujillo.",
+    img_alt_3: "Photo: inside a downtown café",
+    exp3_title: "Café Trujillo & Nibermu Coffee Lounge",
+    exp3_desc: "In downtown Trujillo, great spots to enjoy origin coffee drinks and typical desserts."
+  }
+};
+</script>
+<script src="../assets/js/i18n.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

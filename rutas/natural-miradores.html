@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miradores — Ruta Natural — Rutas de Trujillo</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">Rutas de Trujillo</span>
+      <span class="brand-sub" data-i18n="brand_sub">Ciudad Jardín, Valle del Cauca</span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="natural.html" class="current" data-i18n="nav_natural">Ruta Natural</a>
+      <a href="cultural.html" data-i18n="nav_cultural">Ruta Cultural</a>
+      <a href="gastronomica.html" data-i18n="nav_gastronomica">Ruta Gastronómica</a>
+      <a href="eventos.html" data-i18n="nav_eventos">Ruta de Eventos</a>
+      <a href="../creditos.html" data-i18n="nav_creditos">Créditos</a>
+      <button id="lang-toggle" aria-label="Switch language">EN</button>
+    </nav>
+  </div>
+</header>
+
+<div class="passport-bar">
+  <div class="wrap">
+    <span data-i18n="passport_label">Progreso de sellos</span>
+    <div class="passport-track"><div class="passport-fill"></div></div>
+    <span data-stamp-count data-total-experiences="7" data-route-prefix="natural">0/7</span>
+  </div>
+</div>
+
+<nav class="crumbs wrap" aria-label="Ruta de navegación">
+  <a href="../index.html" data-i18n="crumb_home">Inicio</a> /
+  <a href="natural.html" data-i18n="nav_natural">Ruta Natural</a> /
+  <span data-i18n="crumb_here">Miradores</span>
+</nav>
+
+<section class="route-hero">
+  <div class="wrap">
+    <h1 data-i18n="page_title">Miradores</h1>
+    <p data-i18n="page_intro">Tres lugares para ver Trujillo y el Valle del Cauca desde arriba, cada uno con su propio plan.</p>
+  </div>
+</section>
+
+<section class="experiences wrap">
+
+  <article class="experience-card">
+    <div class="thumb"><img src="../assets/img/puertas-del-sol.jpg" alt="Vista panorámica desde Puertas del Sol" loading="lazy"></div>
+    <div>
+      <h3 data-i18n="exp1_title">Puertas del Sol</h3>
+      <p data-i18n="exp1_desc">Ofrece una vista panorámica del Valle del Cauca, además de zonas de descanso, cabañas, piscina y tobogán de colores. En su restaurante puedes probar el tradicional migao y pan de queso.</p>
+      <button class="stamp-btn" data-experience-id="natural-mirador-puertas-del-sol">
+        <span class="stamp-dot"></span><span class="stamp-label" data-i18n="stamp_label">Sellar esta parada</span>
+      </button>
+    </div>
+  </article>
+
+  <article class="experience-card">
+    <div class="thumb"><img src="../assets/img/la-fontana.jfif" alt="La Fontana, Trujillo" loading="lazy"></div>
+    <div>
+      <h3 data-i18n="exp2_title">La Fontana</h3>
+      <p data-i18n="exp2_desc">Actividades al aire libre y de aventura: tirolesa, columpio 360°, cabalgatas guiadas y un mirador hacia las montañas. Tiene minigranja, restaurante campestre y zona de glamping.</p>
+      <button class="stamp-btn" data-experience-id="natural-mirador-fontana">
+        <span class="stamp-dot"></span><span class="stamp-label" data-i18n="stamp_label">Sellar esta parada</span>
+      </button>
+    </div>
+  </article>
+
+  <article class="experience-card">
+    <div class="thumb"><img src="../assets/img/makumba.jfif" alt="Makumba, Trujillo" loading="lazy"></div>
+    <div>
+      <h3 data-i18n="exp3_title">Makumba</h3>
+      <p data-i18n="exp3_desc">Hospedaje campestre con planes de pasadía, gastrobar y restaurante mirador de comida típica colombiana. Cuenta con piscina infinita, senderos ecológicos, zonas verdes y juegos infantiles.</p>
+      <button class="stamp-btn" data-experience-id="natural-mirador-makumba">
+        <span class="stamp-dot"></span><span class="stamp-label" data-i18n="stamp_label">Sellar esta parada</span>
+      </button>
+    </div>
+  </article>
+
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span data-i18n="footer_note">Aplicación multimedia académica — Curso Aplicaciones Multimedia, UNAD.</span>
+    <a href="../creditos.html" data-i18n="footer_credits">Ver créditos e imágenes</a>
+  </div>
+</footer>
+
+<script>
+window.PAGE_I18N = {
+  es: {
+    brand_sub: "Ciudad Jardín, Valle del Cauca",
+    nav_natural: "Ruta Natural", nav_cultural: "Ruta Cultural",
+    nav_gastronomica: "Ruta Gastronómica", nav_eventos: "Ruta de Eventos", nav_creditos: "Créditos",
+    passport_label: "Progreso de sellos", crumb_home: "Inicio", crumb_here: "Miradores",
+    page_title: "Miradores", page_intro: "Tres lugares para ver Trujillo y el Valle del Cauca desde arriba, cada uno con su propio plan.",
+    img_alt_1: "Foto: vista panorámica desde Puertas del Sol",
+    img_alt_2: "Foto: tirolesa y columpio 360° en La Fontana",
+    img_alt_3: "Foto: piscina infinita con vista al Valle en Makumba",
+    exp1_title: "Puertas del Sol",
+    exp1_desc: "Ofrece una vista panorámica del Valle del Cauca, además de zonas de descanso, cabañas, piscina y tobogán de colores. En su restaurante puedes probar el tradicional migao y pan de queso.",
+    exp2_title: "La Fontana",
+    exp2_desc: "Actividades al aire libre y de aventura: tirolesa, columpio 360°, cabalgatas guiadas y un mirador hacia las montañas. Tiene minigranja, restaurante campestre y zona de glamping.",
+    exp3_title: "Makumba",
+    exp3_desc: "Hospedaje campestre con planes de pasadía, gastrobar y restaurante mirador de comida típica colombiana. Cuenta con piscina infinita, senderos ecológicos, zonas verdes y juegos infantiles.",
+    stamp_label: "Sellar esta parada",
+    footer_note: "Aplicación multimedia académica — Curso Aplicaciones Multimedia, UNAD.",
+    footer_credits: "Ver créditos e imágenes"
+  },
+  en: {
+    brand_sub: "Garden City, Valle del Cauca",
+    nav_natural: "Nature Route", nav_cultural: "Culture Route",
+    nav_gastronomica: "Food Route", nav_eventos: "Events Route", nav_creditos: "Credits",
+    passport_label: "Stamp progress", crumb_home: "Home", crumb_here: "Viewpoints",
+    page_title: "Viewpoints", page_intro: "Three spots to see Trujillo and the Valle del Cauca from above, each with its own plan for the day.",
+    img_alt_1: "Photo: panoramic view from Puertas del Sol",
+    img_alt_2: "Photo: zipline and 360° swing at La Fontana",
+    img_alt_3: "Photo: infinity pool overlooking the Valley at Makumba",
+    exp1_title: "Puertas del Sol",
+    exp1_desc: "Offers a panoramic view of the Valle del Cauca, plus rest areas, cabins, a pool, and a colorful slide. Its restaurant serves the traditional migao and pan de queso.",
+    exp2_title: "La Fontana",
+    exp2_desc: "Outdoor and adventure activities: zipline, 360° swing, guided horseback rides, and a viewpoint over the mountains. Includes a mini-farm, a countryside restaurant, and a glamping area.",
+    exp3_title: "Makumba",
+    exp3_desc: "Countryside lodging with day-trip plans, a gastrobar and viewpoint restaurant serving typical Colombian food. Features an infinity pool, eco trails, green areas, and a children's play area.",
+    stamp_label: "Stamp this stop",
+    footer_note: "Academic multimedia app — Multimedia Applications course, UNAD.",
+    footer_credits: "See credits & images"
+  }
+};
+</script>
+<script src="../assets/js/i18n.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ruta Gastronómica — Rutas de Trujillo</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">Rutas de Trujillo</span>
+      <span class="brand-sub" data-i18n="brand_sub">Ciudad Jardín, Valle del Cauca</span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="natural.html" data-i18n="nav_natural">Ruta Natural</a>
+      <a href="cultural.html" data-i18n="nav_cultural">Ruta Cultural</a>
+      <a href="gastronomica.html" class="current" data-i18n="nav_gastronomica">Ruta Gastronómica</a>
+      <a href="eventos.html" data-i18n="nav_eventos">Ruta de Eventos</a>
+      <a href="../creditos.html" data-i18n="nav_creditos">Créditos</a>
+      <button id="lang-toggle" aria-label="Switch language">EN</button>
+    </nav>
+  </div>
+</header>
+
+<div class="passport-bar">
+  <div class="wrap">
+    <span data-i18n="passport_label">Progreso de sellos</span>
+    <div class="passport-track"><div class="passport-fill"></div></div>
+    <span data-stamp-count data-total-experiences="7" data-route-prefix="gastronomica">0/7</span>
+  </div>
+</div>
+
+<nav class="crumbs wrap" aria-label="Ruta de navegación">
+  <a href="../index.html" data-i18n="crumb_home">Inicio</a> / <span data-i18n="route_h1">Ruta Gastronómica</span>
+</nav>
+
+<section class="route-hero">
+  <div class="wrap" style="--route-color:var(--gold-500)">
+    <span class="route-tag" data-i18n="route_tag">Gastronomía</span>
+    <h1 data-i18n="route_h1">Ruta Gastronómica</h1>
+    <p data-i18n="route_intro">Del cafetal a la taza, y de la cocina campesina a la mesa: así se prueba Trujillo.</p>
+  </div>
+</section>
+
+<section class="map-section wrap">
+  <h2 data-i18n="map_title">Mapa de la ruta</h2>
+  <p class="map-hint" data-i18n="map_hint">Ubicación aproximada de cada punto. Toca un marcador para ver de qué se trata.</p>
+  <div id="route-map"></div>
+</section>
+
+<section class="subsections wrap">
+  <a class="sub-card" href="gastronomica-cafe.html">
+    <h3 data-i18n="sub_0_title">Café y productos del campo</h3>
+    <p data-i18n="sub_0_desc">Fincas y marcas de café de especialidad, y los cultivos que sostienen la economía local.</p>
+  </a>
+  <a class="sub-card" href="gastronomica-sabores.html">
+    <h3 data-i18n="sub_1_title">Sabores locales</h3>
+    <p data-i18n="sub_1_desc">Los platos que representan la cocina campesina y paisa de Trujillo.</p>
+  </a>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span data-i18n="footer_note">Aplicación multimedia académica — Curso Aplicaciones Multimedia, UNAD.</span>
+    <a href="../creditos.html" data-i18n="footer_credits">Ver créditos e imágenes</a>
+  </div>
+</footer>
+
+<script>
+window.PAGE_I18N = {
+  es: {
+    brand_sub: "Ciudad Jardín, Valle del Cauca",
+    nav_natural: "Ruta Natural",
+    nav_cultural: "Ruta Cultural",
+    nav_gastronomica: "Ruta Gastronómica",
+    nav_eventos: "Ruta de Eventos",
+    nav_creditos: "Créditos",
+    passport_label: "Progreso de sellos",
+    crumb_home: "Inicio",
+    footer_note: "Aplicación multimedia académica — Curso Aplicaciones Multimedia, UNAD.",
+    footer_credits: "Ver créditos e imágenes",
+    stamp_label: "Sellar esta parada",
+    map_title: "Mapa de la ruta",
+    map_hint: "Ubicación aproximada de cada punto. Toca un marcador para ver de qué se trata.",
+    route_tag: "Gastronomía",
+    route_h1: "Ruta Gastronómica",
+    route_intro: "Del cafetal a la taza, y de la cocina campesina a la mesa: así se prueba Trujillo.",
+    sub_0_title: "Café y productos del campo",
+    sub_0_desc: "Fincas y marcas de café de especialidad, y los cultivos que sostienen la economía local.",
+    sub_1_title: "Sabores locales",
+    sub_1_desc: "Los platos que representan la cocina campesina y paisa de Trujillo."
+  },
+  en: {
+    brand_sub: "Garden City, Valle del Cauca",
+    nav_natural: "Nature Route",
+    nav_cultural: "Culture Route",
+    nav_gastronomica: "Food Route",
+    nav_eventos: "Events Route",
+    nav_creditos: "Credits",
+    passport_label: "Stamp progress",
+    crumb_home: "Home",
+    footer_note: "Academic multimedia app — Multimedia Applications course, UNAD.",
+    footer_credits: "See credits & images",
+    stamp_label: "Stamp this stop",
+    map_title: "Route map",
+    map_hint: "Approximate location of each stop. Tap a marker to see what it is.",
+    route_tag: "Food",
+    route_h1: "Food Route",
+    route_intro: "From coffee farm to cup, and from country kitchen to table: this is how you taste Trujillo.",
+    sub_0_title: "Coffee & farm products",
+    sub_0_desc: "Specialty coffee farms and brands, and the crops that sustain the local economy.",
+    sub_1_title: "Local flavors",
+    sub_1_desc: "The dishes that represent Trujillo's countryside and paisa cooking."
+  }
+};
+</script>
+<script src="../assets/js/i18n.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  const map = L.map('route-map', { scrollWheelZoom:false }).setView([4.2114, -76.3222], 13);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+    subdomains: 'abcd', maxZoom: 19
+  }).addTo(map);
+  const points = [
+    { name:'Finca La Julia', lat:4.211642147975761, lng:-76.31879471047381, desc:'Café de especialidad de alta montaña.' },
+    { name:'Café Orozco', lat:4.230949379419822, lng:-76.38997040991457, desc:'Producción y exportación de café arábigo.' },
+    { name:'Casco urbano — cafés y restaurantes', lat:4.212795593023709, lng:-76.31937563241478, desc:'Café Trujillo, Nibermu Coffee Lounge y sitios de comida típica.' }
+  ];
+  points.forEach(p => {
+    L.marker([p.lat, p.lng]).addTo(map).bindPopup('<strong>' + p.name + '</strong><br>' + p.desc);
+  });
+</script>
+</body>
+</html>

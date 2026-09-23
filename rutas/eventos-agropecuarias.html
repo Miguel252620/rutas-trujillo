@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fiestas Agropecuarias y del Café — Rutas de Trujillo</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">Rutas de Trujillo</span>
+      <span class="brand-sub" data-i18n="brand_sub">Ciudad Jardín, Valle del Cauca</span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="natural.html" data-i18n="nav_natural">Ruta Natural</a>
+      <a href="cultural.html" data-i18n="nav_cultural">Ruta Cultural</a>
+      <a href="gastronomica.html" data-i18n="nav_gastronomica">Ruta Gastronómica</a>
+      <a href="eventos.html" class="current" data-i18n="nav_eventos">Ruta de Eventos</a>
+      <a href="../creditos.html" data-i18n="nav_creditos">Créditos</a>
+      <button id="lang-toggle" aria-label="Switch language">EN</button>
+    </nav>
+  </div>
+</header>
+
+<div class="passport-bar">
+  <div class="wrap">
+    <span data-i18n="passport_label">Progreso de sellos</span>
+    <div class="passport-track"><div class="passport-fill"></div></div>
+    <span data-stamp-count data-total-experiences="5" data-route-prefix="eventos">0/5</span>
+  </div>
+</div>
+
+<nav class="crumbs wrap" aria-label="Ruta de navegación">
+  <a href="../index.html" data-i18n="crumb_home">Inicio</a> /
+  <a href="eventos.html" data-i18n="nav_eventos">Ruta de Eventos</a> /
+  <span data-i18n="crumb_here">Fiestas Agropecuarias y del Café</span>
+</nav>
+
+<section class="route-hero">
+  <div class="wrap">
+    <h1 data-i18n="page_title">Fiestas Agropecuarias y del Café</h1>
+    <p data-i18n="page_intro">El evento más representativo del municipio, que celebra el trabajo del campo y la caficultura.</p>
+  </div>
+</section>
+
+<section class="experiences wrap">
+  <article class="experience-card">
+    <div class="thumb"><img src="../assets/img/fiestas-del-cafe.jfif" alt="Fiestas Populares y del Café" loading="lazy"></div>
+    <div>
+      <h3 data-i18n="exp0_title">Fiestas Populares y del Café</h3>
+      <p data-i18n="exp0_desc">Se celebran cada año en el mes de noviembre. Incluyen muestras culturales, desfiles, cabalgatas, música y concursos de calidad del café.</p>
+      <button class="stamp-btn" data-experience-id="eventos-fiestas-cafe-noviembre">
+        <span class="stamp-dot"></span><span class="stamp-label" data-i18n="stamp_label">Sellar esta parada</span>
+      </button>
+    </div>
+  </article>
+  <article class="experience-card">
+    <div class="thumb"><img src="../assets/img/festival-caficultura.jfif" alt="Festival de la Caficultura Trujillense" loading="lazy"></div>
+    <div>
+      <h3 data-i18n="exp1_title">Festival de la Caficultura Trujillense</h3>
+      <p data-i18n="exp1_desc">Se realiza en noviembre como parte del día del campesino y destaca la labor de los caficultores locales.</p>
+      <button class="stamp-btn" data-experience-id="eventos-festival-caficultura">
+        <span class="stamp-dot"></span><span class="stamp-label" data-i18n="stamp_label">Sellar esta parada</span>
+      </button>
+    </div>
+  </article>
+  <article class="experience-card">
+    <div class="thumb"><img src="../assets/img/festival-trujillo-florece.jpg" alt="Festival Trujillo Florece y Toldos al Parque" loading="lazy"></div>
+    <div>
+      <h3 data-i18n="exp2_title">Festival Trujillo Florece y Toldos al Parque</h3>
+      <p data-i18n="exp2_desc">Un evento cultural y gastronómico realizado en el primer semestre (hacia marzo) que incluye exposiciones de orquídeas y muestras del campo.</p>
+      <button class="stamp-btn" data-experience-id="eventos-trujillo-florece">
+        <span class="stamp-dot"></span><span class="stamp-label" data-i18n="stamp_label">Sellar esta parada</span>
+      </button>
+    </div>
+  </article>
+  <article class="experience-card">
+    <div class="thumb"><img src="../assets/img/mercado-campesino.jfif" alt="Feria agropecuaria / mercado campesino" loading="lazy"></div>
+    <div>
+      <h3 data-i18n="exp3_title">Ferias Agropecuarias periódicas</h3>
+      <p data-i18n="exp3_desc">Tradicionalmente se programan encuentros y mercados campesinos el primer viernes de cada mes o en fechas especiales de cosecha.</p>
+      <button class="stamp-btn" data-experience-id="eventos-ferias-agropecuarias">
+        <span class="stamp-dot"></span><span class="stamp-label" data-i18n="stamp_label">Sellar esta parada</span>
+      </button>
+    </div>
+  </article>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span data-i18n="footer_note">Aplicación multimedia académica — Curso Aplicaciones Multimedia, UNAD.</span>
+    <a href="../creditos.html" data-i18n="footer_credits">Ver créditos e imágenes</a>
+  </div>
+</footer>
+
+<script>
+window.PAGE_I18N = {
+  es: {
+    brand_sub: "Ciudad Jardín, Valle del Cauca",
+    nav_natural: "Ruta Natural",
+    nav_cultural: "Ruta Cultural",
+    nav_gastronomica: "Ruta Gastronómica",
+    nav_eventos: "Ruta de Eventos",
+    nav_creditos: "Créditos",
+    passport_label: "Progreso de sellos",
+    crumb_home: "Inicio",
+    footer_note: "Aplicación multimedia académica — Curso Aplicaciones Multimedia, UNAD.",
+    footer_credits: "Ver créditos e imágenes",
+    stamp_label: "Sellar esta parada",
+    map_title: "Mapa de la ruta",
+    map_hint: "Ubicación aproximada de cada punto. Toca un marcador para ver de qué se trata.",
+    crumb_here: "Fiestas Agropecuarias y del Café",
+    page_title: "Fiestas Agropecuarias y del Café",
+    page_intro: "El evento más representativo del municipio, que celebra el trabajo del campo y la caficultura.",
+    img_alt_0: "Foto: desfile de las Fiestas del Café",
+    exp0_title: "Fiestas Populares y del Café",
+    exp0_desc: "Se celebran cada año en el mes de noviembre. Incluyen muestras culturales, desfiles, cabalgatas, música y concursos de calidad del café.",
+    img_alt_1: "Foto: caficultores en el festival",
+    exp1_title: "Festival de la Caficultura Trujillense",
+    exp1_desc: "Se realiza en noviembre como parte del día del campesino y destaca la labor de los caficultores locales.",
+    img_alt_2: "Foto: exposición de orquídeas en el parque",
+    exp2_title: "Festival Trujillo Florece y Toldos al Parque",
+    exp2_desc: "Un evento cultural y gastronómico realizado en el primer semestre (hacia marzo) que incluye exposiciones de orquídeas y muestras del campo.",
+    img_alt_3: "Foto: mercado campesino",
+    exp3_title: "Ferias Agropecuarias periódicas",
+    exp3_desc: "Tradicionalmente se programan encuentros y mercados campesinos el primer viernes de cada mes o en fechas especiales de cosecha."
+  },
+  en: {
+    brand_sub: "Garden City, Valle del Cauca",
+    nav_natural: "Nature Route",
+    nav_cultural: "Culture Route",
+    nav_gastronomica: "Food Route",
+    nav_eventos: "Events Route",
+    nav_creditos: "Credits",
+    passport_label: "Stamp progress",
+    crumb_home: "Home",
+    footer_note: "Academic multimedia app — Multimedia Applications course, UNAD.",
+    footer_credits: "See credits & images",
+    stamp_label: "Stamp this stop",
+    map_title: "Route map",
+    map_hint: "Approximate location of each stop. Tap a marker to see what it is.",
+    crumb_here: "Farming & Coffee Festivals",
+    page_title: "Farming & Coffee Festivals",
+    page_intro: "The town's most representative event, celebrating farm work and coffee growing.",
+    img_alt_0: "Photo: parade during the Coffee Festival",
+    exp0_title: "Popular & Coffee Festival",
+    exp0_desc: "Held every year in November. Includes cultural exhibits, parades, horseback processions, music, and coffee-quality contests.",
+    img_alt_1: "Photo: coffee growers at the festival",
+    exp1_title: "Trujillo Coffee Growing Festival",
+    exp1_desc: "Held in November as part of Farmers' Day, highlighting the work of local coffee growers.",
+    img_alt_2: "Photo: orchid exhibit in the park",
+    exp2_title: "Trujillo Florece & Toldos al Parque Festival",
+    exp2_desc: "A cultural and food event held in the first half of the year (around March), featuring orchid exhibits and farm showcases.",
+    img_alt_3: "Photo: a farmers' market",
+    exp3_title: "Regular farming fairs",
+    exp3_desc: "Farmers' markets and gatherings are traditionally held on the first Friday of each month or during special harvest dates."
+  }
+};
+</script>
+<script src="../assets/js/i18n.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patrimonio del centro — Rutas de Trujillo</title>
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html">
+      <span class="brand-mark">Rutas de Trujillo</span>
+      <span class="brand-sub" data-i18n="brand_sub">Ciudad Jardín, Valle del Cauca</span>
+    </a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="natural.html" data-i18n="nav_natural">Ruta Natural</a>
+      <a href="cultural.html" class="current" data-i18n="nav_cultural">Ruta Cultural</a>
+      <a href="gastronomica.html" data-i18n="nav_gastronomica">Ruta Gastronómica</a>
+      <a href="eventos.html" data-i18n="nav_eventos">Ruta de Eventos</a>
+      <a href="../creditos.html" data-i18n="nav_creditos">Créditos</a>
+      <button id="lang-toggle" aria-label="Switch language">EN</button>
+    </nav>
+  </div>
+</header>
+
+<div class="passport-bar">
+  <div class="wrap">
+    <span data-i18n="passport_label">Progreso de sellos</span>
+    <div class="passport-track"><div class="passport-fill"></div></div>
+    <span data-stamp-count data-total-experiences="8" data-route-prefix="cultural">0/8</span>
+  </div>
+</div>
+
+<nav class="crumbs wrap" aria-label="Ruta de navegación">
+  <a href="../index.html" data-i18n="crumb_home">Inicio</a> /
+  <a href="cultural.html" data-i18n="nav_cultural">Ruta Cultural</a> /
+  <span data-i18n="crumb_here">Patrimonio del centro</span>
+</nav>
+
+<section class="route-hero">
+  <div class="wrap">
+    <h1 data-i18n="page_title">Patrimonio del centro</h1>
+    <p data-i18n="page_intro">Un recorrido corto por el casco urbano de Trujillo, entre arquitectura, plazas y templos.</p>
+  </div>
+</section>
+
+<section class="experiences wrap">
+  <article class="experience-card">
+    <div class="thumb"><img src="../assets/img/paisaje-cultural-cafetero.jfif" alt="Paisaje Cultural Cafetero, Trujillo" loading="lazy"></div>
+    <div>
+      <h3 data-i18n="exp0_title">Paisaje Cultural Cafetero</h3>
+      <p data-i18n="exp0_desc">Arquitectura de influencia antioqueña y caldense, con calles anchas, casas coloridas y cafetales tradicionales.</p>
+      <button class="stamp-btn" data-experience-id="cultural-paisaje-cafetero">
+        <span class="stamp-dot"></span><span class="stamp-label" data-i18n="stamp_label">Sellar esta parada</span>
+      </button>
+    </div>
+  </article>
+  <article class="experience-card">
+    <div class="thumb"><img src="../assets/img/parque-santander.jpg" alt="Parque Principal Santander" loading="lazy"></div>
+    <div>
+      <h3 data-i18n="exp1_title">Parque Principal Santander</h3>
+      <p data-i18n="exp1_desc">Corazón del municipio, adornado por palmas centenarias.</p>
+      <button class="stamp-btn" data-experience-id="cultural-parque-santander">
+        <span class="stamp-dot"></span><span class="stamp-label" data-i18n="stamp_label">Sellar esta parada</span>
+      </button>
+    </div>
+  </article>
+  <article class="experience-card">
+    <div class="thumb"><img src="../assets/img/iglesia-perpetuo-socorro.jfif" alt="Iglesia Nuestra Señora del Perpetuo Socorro" loading="lazy"></div>
+    <div>
+      <h3 data-i18n="exp2_title">Iglesia Nuestra Señora del Perpetuo Socorro</h3>
+      <p data-i18n="exp2_desc">Templo católico con una de las torres más altas del departamento.</p>
+      <button class="stamp-btn" data-experience-id="cultural-iglesia-perpetuo-socorro">
+        <span class="stamp-dot"></span><span class="stamp-label" data-i18n="stamp_label">Sellar esta parada</span>
+      </button>
+    </div>
+  </article>
+  <article class="experience-card">
+    <div class="thumb"><img src="../assets/img/parque-monumento-victimas.jpg" alt="Parque Monumento a las Víctimas" loading="lazy"></div>
+    <div>
+      <h3 data-i18n="exp3_title">Parque Monumento a las Víctimas</h3>
+      <p data-i18n="exp3_desc">Espacio de memoria histórica dedicado a las víctimas del conflicto armado en la región.</p>
+      <button class="stamp-btn" data-experience-id="cultural-parque-monumento-victimas">
+        <span class="stamp-dot"></span><span class="stamp-label" data-i18n="stamp_label">Sellar esta parada</span>
+      </button>
+    </div>
+  </article>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span data-i18n="footer_note">Aplicación multimedia académica — Curso Aplicaciones Multimedia, UNAD.</span>
+    <a href="../creditos.html" data-i18n="footer_credits">Ver créditos e imágenes</a>
+  </div>
+</footer>
+
+<script>
+window.PAGE_I18N = {
+  es: {
+    brand_sub: "Ciudad Jardín, Valle del Cauca",
+    nav_natural: "Ruta Natural",
+    nav_cultural: "Ruta Cultural",
+    nav_gastronomica: "Ruta Gastronómica",
+    nav_eventos: "Ruta de Eventos",
+    nav_creditos: "Créditos",
+    passport_label: "Progreso de sellos",
+    crumb_home: "Inicio",
+    footer_note: "Aplicación multimedia académica — Curso Aplicaciones Multimedia, UNAD.",
+    footer_credits: "Ver créditos e imágenes",
+    stamp_label: "Sellar esta parada",
+    map_title: "Mapa de la ruta",
+    map_hint: "Ubicación aproximada de cada punto. Toca un marcador para ver de qué se trata.",
+    crumb_here: "Patrimonio del centro",
+    page_title: "Patrimonio del centro",
+    page_intro: "Un recorrido corto por el casco urbano de Trujillo, entre arquitectura, plazas y templos.",
+    img_alt_0: "Foto: fachadas coloridas del casco urbano",
+    exp0_title: "Paisaje Cultural Cafetero",
+    exp0_desc: "Arquitectura de influencia antioqueña y caldense, con calles anchas, casas coloridas y cafetales tradicionales.",
+    img_alt_1: "Foto: Parque Santander con sus palmas",
+    exp1_title: "Parque Principal Santander",
+    exp1_desc: "Corazón del municipio, adornado por palmas centenarias.",
+    img_alt_2: "Foto: torre de la iglesia principal",
+    exp2_title: "Iglesia Nuestra Señora del Perpetuo Socorro",
+    exp2_desc: "Templo católico con una de las torres más altas del departamento.",
+    img_alt_3: "Foto: monumento conmemorativo",
+    exp3_title: "Parque Monumento a las Víctimas",
+    exp3_desc: "Espacio de memoria histórica dedicado a las víctimas del conflicto armado en la región."
+  },
+  en: {
+    brand_sub: "Garden City, Valle del Cauca",
+    nav_natural: "Nature Route",
+    nav_cultural: "Culture Route",
+    nav_gastronomica: "Food Route",
+    nav_eventos: "Events Route",
+    nav_creditos: "Credits",
+    passport_label: "Stamp progress",
+    crumb_home: "Home",
+    footer_note: "Academic multimedia app — Multimedia Applications course, UNAD.",
+    footer_credits: "See credits & images",
+    stamp_label: "Stamp this stop",
+    map_title: "Route map",
+    map_hint: "Approximate location of each stop. Tap a marker to see what it is.",
+    crumb_here: "Downtown heritage",
+    page_title: "Downtown heritage",
+    page_intro: "A short walk through downtown Trujillo, through architecture, plazas, and churches.",
+    img_alt_0: "Photo: colorful downtown façades",
+    exp0_title: "Coffee Cultural Landscape",
+    exp0_desc: "Architecture with Antioquian and Caldas influence, wide streets, colorful houses, and traditional coffee farms.",
+    img_alt_1: "Photo: Parque Santander with its palm trees",
+    exp1_title: "Parque Santander",
+    exp1_desc: "The heart of the town, framed by century-old palm trees.",
+    img_alt_2: "Photo: the main church tower",
+    exp2_title: "Church of Our Lady of Perpetual Help",
+    exp2_desc: "A Catholic church with one of the tallest towers in the department.",
+    img_alt_3: "Photo: the memorial monument",
+    exp3_title: "Victims' Memorial Park",
+    exp3_desc: "A memorial space dedicated to the victims of the region's armed conflict."
+  }
+};
+</script>
+<script src="../assets/js/i18n.js"></script>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
