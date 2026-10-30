@@ -48,4 +48,92 @@
 
 <section class="map-section wrap">
   <h2 data-i18n="map_title">Mapa de la ruta</h2>
-  <p class="map-hint" data-i18n="map_hint">Ubicación aproximada de cada punto. Toca
+  <p class="map-hint" data-i18n="map_hint">Ubicación aproximada de cada punto. Toca un marcador para ver de qué se trata.</p>
+  <div id="route-map"></div>
+</section>
+
+<section class="subsections wrap">
+  <a class="sub-card" href="eventos-agropecuarias.html">
+    <h3 data-i18n="sub_0_title">Fiestas Agropecuarias y del Café</h3>
+    <p data-i18n="sub_0_desc">El festival más grande del municipio, alrededor de la caficultura y el campo.</p>
+  </a>
+  <a class="sub-card" href="eventos-buenos-vientos.html">
+    <h3 data-i18n="sub_1_title">Festival de los Buenos Vientos</h3>
+    <p data-i18n="sub_1_desc">El evento comunitario de Huasanó, en agosto.</p>
+  </a>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span data-i18n="footer_note">Aplicación multimedia académica — Curso Aplicaciones Multimedia, UNAD.</span>
+    <a href="../creditos.html" data-i18n="footer_credits">Ver créditos e imágenes</a>
+  </div>
+</footer>
+
+<script>
+window.PAGE_I18N = {
+  es: {
+    brand_sub: "Ciudad Jardín, Valle del Cauca",
+    nav_natural: "Ruta Natural",
+    nav_cultural: "Ruta Cultural",
+    nav_gastronomica: "Ruta Gastronómica",
+    nav_eventos: "Ruta de Eventos",
+    nav_creditos: "Créditos",
+    passport_label: "Progreso de sellos",
+    crumb_home: "Inicio",
+    footer_note: "Aplicación multimedia académica — Curso Aplicaciones Multimedia, UNAD.",
+    footer_credits: "Ver créditos e imágenes",
+    stamp_label: "Sellar esta parada",
+    map_title: "Mapa de la ruta",
+    map_hint: "Ubicación aproximada de cada punto. Toca un marcador para ver de qué se trata.",
+    route_tag: "Eventos comunitarios",
+    route_h1: "Ruta de Eventos",
+    route_intro: "El calendario de Trujillo tiene su propio ritmo: fiestas del café en noviembre, flores en marzo y buenos vientos en agosto.",
+    sub_0_title: "Fiestas Agropecuarias y del Café",
+    sub_0_desc: "El festival más grande del municipio, alrededor de la caficultura y el campo.",
+    sub_1_title: "Festival de los Buenos Vientos",
+    sub_1_desc: "El evento comunitario de Huasanó, en agosto."
+  },
+  en: {
+    brand_sub: "Garden City, Valle del Cauca",
+    nav_natural: "Nature Route",
+    nav_cultural: "Culture Route",
+    nav_gastronomica: "Food Route",
+    nav_eventos: "Events Route",
+    nav_creditos: "Credits",
+    passport_label: "Stamp progress",
+    crumb_home: "Home",
+    footer_note: "Academic multimedia app — Multimedia Applications course, UNAD.",
+    footer_credits: "See credits & images",
+    stamp_label: "Stamp this stop",
+    map_title: "Route map",
+    map_hint: "Approximate location of each stop. Tap a marker to see what it is.",
+    route_tag: "Community events",
+    route_h1: "Events Route",
+    route_intro: "Trujillo's calendar has its own rhythm: coffee festivals in November, flowers in March, and good winds in August.",
+    sub_0_title: "Farming & Coffee Festivals",
+    sub_0_desc: "The town's biggest festival, centered on coffee growing and rural life.",
+    sub_1_title: "Festival de los Buenos Vientos",
+    sub_1_desc: "The community festival of Huasanó, held in August."
+  }
+};
+</script>
+<script src="../assets/js/i18n.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  const map = L.map('route-map', { scrollWheelZoom:false }).setView([4.2114, -76.3222], 13);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxZoom: 19
+  }).addTo(map);
+  const points = [
+    { name:'Casco urbano de Trujillo', lat:4.212365592780617, lng:-76.31883852008505, desc:'Sede de las Fiestas Populares y del Café, y del Festival Trujillo Florece.' },
+    { name:'Corregimiento de Huasanó', lat:4.245351716057707, lng:-76.24454227630328, desc:'Sede del Festival de los Buenos Vientos, en agosto.' }
+  ];
+  points.forEach(p => {
+    L.marker([p.lat, p.lng]).addTo(map).bindPopup('<strong>' + p.name + '</strong><br>' + p.desc);
+  });
+</script>
+</body>
+</html>
