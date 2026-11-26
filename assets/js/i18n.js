@@ -32,6 +32,9 @@
       toggleBtn.textContent = lang === 'es' ? 'EN' : 'ES';
       toggleBtn.setAttribute('aria-label', lang === 'es' ? 'Switch to English' : 'Cambiar a español');
     }
+
+    // Avisa a main.js para que vuelva a poner "Sellado/Stamped" en los botones ya sellados
+    document.dispatchEvent(new CustomEvent('langchange', { detail: { lang: lang } }));
   }
 
   document.addEventListener('DOMContentLoaded', function(){

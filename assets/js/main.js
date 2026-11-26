@@ -26,6 +26,23 @@
     return stamps;
   }
 
+  // Pone el texto correcto (idioma + sellado o no) en cada botón de sello
+  function refreshStampLabels(){
+    const stamps = getStamps();
+    const lang = localStorage.getItem('rutas-trujillo-lang') || 'es';
+    document.querySelectorAll('.stamp-btn').forEach(function(btn){
+      const id = btn.getAttribute('data-experience-id');
+      const label = btn.querySelector('.stamp-label');
+      if (!id || !label) return;
+      const isStamped = stamps.includes(id);
+      if (lang === 'en'){
+        label.textContent = isStamped ? 'Stamped' : 'Stamp this stop';
+      } else {
+        label.textContent = isStamped ? 'Sellado' : 'Sellar esta parada';
+      }
+    });
+  }
+
   function renderStampButtons(){
     const stamps = getStamps();
     document.querySelectorAll('.stamp-btn').forEach(function(btn){
@@ -62,6 +79,9 @@
     fillEl.style.width = pct + '%';
     if (countEl) countEl.textContent = relevant.length + '/' + total;
   }
+
+  // Cuando cambia el idioma, i18n.js reescribe los textos; aquí se restauran los botones sellados
+  document.addEventListener('langchange', refreshStampLabels);
 
   document.addEventListener('DOMContentLoaded', function(){
     renderStampButtons();
