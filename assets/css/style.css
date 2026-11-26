@@ -235,3 +235,23 @@ nav.main-nav a.current{color:var(--gold-500); border-bottom:2px solid var(--gold
 .stub{padding:64px 0; text-align:left}
 .stub h1{font-family:var(--font-display); font-size:2.2rem}
 .stub p{max-width:56ch; color:var(--coffee-700)}
+
+/* ---------- Fase 5: explicación de sellos (inicio) ---------- */
+.how-stamps{
+  margin-top:28px; padding:22px 26px;
+  background:var(--cream-50); border:1px solid var(--paper-line);
+  border-radius:var(--radius-stamp);
+}
+.how-stamps h2{font-family:var(--font-display); font-size:1.4rem; margin:0 0 8px}
+.how-stamps .how-lead{margin:0 0 12px; color:var(--coffee-700)}
+.how-steps{margin:0 0 12px; padding-left:22px; color:var(--coffee-700); line-height:1.7}
+.how-steps li{margin-bottom:4px}
+.how-note{margin:0; font-size:0.9rem; color:var(--coffee-600)}
+
+/* ---------- Fase 5: fuentes por página ---------- */
+.sources{padding:0 0 28px}
+.sources h2{font-family:var(--font-display); font-size:1.15rem; margin:0 0 8px}
+.sources .sources-list{margin:0 0 6px; color:var(--coffee-700); line-height:1.7; overflow-wrap:anywhere}
+.sources .sources-list a{color:var(--coffee-900)}
+.sources .sources-note{margin:0; font-size:0.85rem; color:var(--coffee-600)}
+.refs li:target{background:var(--gold-200); border-radius:4px; padding:4px 6px}
